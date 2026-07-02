@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson Planning · CEUE203</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Navbar ─────────────────────────────────────────────────────────────── -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">CEUE203</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="co-po-pso.html">CO&ndash;PO&ndash;PSO</a></li>
+        <li class="nav-item"><a class="nav-link active" href="lesson-planning.html">Lesson Planning</a></li>
+        <li class="nav-item"><a class="nav-link" href="practicals.html">Practicals</a></li>
+        <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Page Header ────────────────────────────────────────────────────────── -->
+<div class="page-header">
+  <div class="container">
+    <h1>Lesson Planning</h1>
+    <p class="sub">Unit-wise lecture session plan for CEUE203 &ndash; Object Oriented Programming</p>
+    <div class="badges">
+      <span class="badge">CEUE203</span>
+      <span class="badge">3rd Semester · 2026–27</span>
+      <span class="badge">6 Units · 39 Lecture Hours</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── Main content ───────────────────────────────────────────────────────── -->
+<main class="container">
+
+  <!-- Unit filter -->
+  <div class="section-block pb-2">
+    <div class="filter-bar">
+      <button class="btn btn-sm btn-primary active" onclick="filterUnit('all', this)">All Units</button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterUnit('unit-1', this)">
+        <span class="badge unit-1 me-1">1</span> Intro to OOP
+      </button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterUnit('unit-2', this)">
+        <span class="badge unit-2 me-1">2</span> Classes &amp; Objects
+      </button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterUnit('unit-3', this)">
+        <span class="badge unit-3 me-1">3</span> Inheritance
+      </button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterUnit('unit-4', this)">
+        <span class="badge unit-4 me-1">4</span> Polymorphism
+      </button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterUnit('unit-5', this)">
+        <span class="badge unit-5 me-1">5</span> Exception / I/O
+      </button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterUnit('unit-6', this)">
+        <span class="badge unit-6 me-1">6</span> Templates / STL
+      </button>
+    </div>
+  </div>
+
+  <!-- ── Unit 1 ────────────────────────────────────────────────────────── -->
+  <div class="section-block lesson-unit unit-1-block" id="unit1">
+    <h2>
+      <span class="badge unit-1 me-2">Unit 1</span>
+      Introduction to OOP Concepts
+      <small class="text-muted fw-normal ms-2" style="font-size:0.82rem;">6 hrs &nbsp;·&nbsp; CO1 &nbsp;·&nbsp; Weeks 1–2</small>
+    </h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-sm align-middle">
+        <thead class="table-light">
+          <tr>
+            <th style="width:6%">Lecture</th>
+            <th style="width:8%">Week</th>
+            <th>Topic</th>
+            <th style="width:14%">Teaching Method</th>
+            <th style="width:8%">CO</th>
+            <th style="width:8%">Duration</th>
+            <th style="width:10%">Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>L1</td>
+            <td><span class="badge unit-1">1</span></td>
+            <td>Introduction to Programming Paradigms: Procedural vs OOP</td>
+            <td>Lecture + Discussion</td>
+            <td><span class="badge badge-co">CO1</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U1" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L2</td>
+            <td><span class="badge unit-1">1</span></td>
+            <td>OOP Principles: Encapsulation, Abstraction, Inheritance, Polymorphism</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO1</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U1" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L3</td>
+            <td><span class="badge unit-1">1</span></td>
+            <td>Introduction to C++: Structure, Compilation, Basic Syntax</td>
+            <td>Lecture + Demo</td>
+            <td><span class="badge badge-co">CO1</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U1" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L4</td>
+            <td><span class="badge unit-1">2</span></td>
+            <td>C++ vs C: new/delete, references, inline functions, default arguments</td>
+            <td>Lecture + Code Demo</td>
+            <td><span class="badge badge-co">CO1</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U1" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L5</td>
+            <td><span class="badge unit-1">2</span></td>
+            <td>Function Overloading and Namespaces</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO1</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U1" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L6</td>
+            <td><span class="badge unit-1">2</span></td>
+            <td>Unit 1 Revision &amp; Problem Solving Session</td>
+            <td>Problem Solving</td>
+            <td><span class="badge badge-co">CO1</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U1" aria-disabled="true">Plan</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── Unit 2 ────────────────────────────────────────────────────────── -->
+  <div class="section-block lesson-unit unit-2-block" id="unit2">
+    <h2>
+      <span class="badge unit-2 me-2">Unit 2</span>
+      Classes and Objects
+      <small class="text-muted fw-normal ms-2" style="font-size:0.82rem;">9 hrs &nbsp;·&nbsp; CO2 &nbsp;·&nbsp; Weeks 3–5</small>
+    </h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-sm align-middle">
+        <thead class="table-light">
+          <tr>
+            <th style="width:6%">Lecture</th>
+            <th style="width:8%">Week</th>
+            <th>Topic</th>
+            <th style="width:14%">Teaching Method</th>
+            <th style="width:8%">CO</th>
+            <th style="width:8%">Duration</th>
+            <th style="width:10%">Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>L7</td>
+            <td><span class="badge unit-2">3</span></td>
+            <td>Defining Classes and Objects: syntax, access specifiers</td>
+            <td>Lecture + Demo</td>
+            <td><span class="badge badge-co">CO2</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U2" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L8</td>
+            <td><span class="badge unit-2">3</span></td>
+            <td>Constructors: default, parameterised, copy constructor</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO2</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U2" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L9</td>
+            <td><span class="badge unit-2">3</span></td>
+            <td>Destructors and dynamic memory management</td>
+            <td>Lecture + Code Demo</td>
+            <td><span class="badge badge-co">CO2</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U2" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L10</td>
+            <td><span class="badge unit-2">4</span></td>
+            <td>Member functions: inline, const, and static member functions</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO2</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U2" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L11</td>
+            <td><span class="badge unit-2">4</span></td>
+            <td>Static data members and static member functions</td>
+            <td>Lecture + Demo</td>
+            <td><span class="badge badge-co">CO2</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U2" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L12</td>
+            <td><span class="badge unit-2">4</span></td>
+            <td>Friend functions and friend classes</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO2</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U2" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L13</td>
+            <td><span class="badge unit-2">5</span></td>
+            <td>this pointer, object arrays, and passing objects to functions</td>
+            <td>Lecture + Code Demo</td>
+            <td><span class="badge badge-co">CO2</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U2" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L14</td>
+            <td><span class="badge unit-2">5</span></td>
+            <td>Unit 2 Practice Problems</td>
+            <td>Problem Solving</td>
+            <td><span class="badge badge-co">CO2</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U2" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L15</td>
+            <td><span class="badge unit-2">5</span></td>
+            <td>Unit 2 Revision &amp; Quiz</td>
+            <td>Quiz / Review</td>
+            <td><span class="badge badge-co">CO2</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U2" aria-disabled="true">Plan</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── Unit 3 ────────────────────────────────────────────────────────── -->
+  <div class="section-block lesson-unit unit-3-block" id="unit3">
+    <h2>
+      <span class="badge unit-3 me-2">Unit 3</span>
+      Inheritance
+      <small class="text-muted fw-normal ms-2" style="font-size:0.82rem;">6 hrs &nbsp;·&nbsp; CO3 &nbsp;·&nbsp; Weeks 6–7</small>
+    </h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-sm align-middle">
+        <thead class="table-light">
+          <tr>
+            <th style="width:6%">Lecture</th>
+            <th style="width:8%">Week</th>
+            <th>Topic</th>
+            <th style="width:14%">Teaching Method</th>
+            <th style="width:8%">CO</th>
+            <th style="width:8%">Duration</th>
+            <th style="width:10%">Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>L16</td>
+            <td><span class="badge unit-3">6</span></td>
+            <td>Concept of Inheritance: base and derived classes, types of inheritance</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO3</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U3" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L17</td>
+            <td><span class="badge unit-3">6</span></td>
+            <td>Single and Multilevel Inheritance</td>
+            <td>Lecture + Code Demo</td>
+            <td><span class="badge badge-co">CO3</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U3" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L18</td>
+            <td><span class="badge unit-3">6</span></td>
+            <td>Multiple and Hierarchical Inheritance</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO3</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U3" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L19</td>
+            <td><span class="badge unit-3">7</span></td>
+            <td>Hybrid Inheritance and Virtual Base Class (Diamond Problem)</td>
+            <td>Lecture + Demo</td>
+            <td><span class="badge badge-co">CO3</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U3" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L20</td>
+            <td><span class="badge unit-3">7</span></td>
+            <td>Constructor and Destructor in Inheritance, Access Control</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO3</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U3" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L21</td>
+            <td><span class="badge unit-3">7</span></td>
+            <td>Unit 3 Revision &amp; Problem Solving</td>
+            <td>Problem Solving</td>
+            <td><span class="badge badge-co">CO3</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U3" aria-disabled="true">Plan</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── Unit 4 ────────────────────────────────────────────────────────── -->
+  <div class="section-block lesson-unit unit-4-block" id="unit4">
+    <h2>
+      <span class="badge unit-4 me-2">Unit 4</span>
+      Polymorphism and Operator Overloading
+      <small class="text-muted fw-normal ms-2" style="font-size:0.82rem;">6 hrs &nbsp;·&nbsp; CO4 &nbsp;·&nbsp; Weeks 8–9</small>
+    </h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-sm align-middle">
+        <thead class="table-light">
+          <tr>
+            <th style="width:6%">Lecture</th>
+            <th style="width:8%">Week</th>
+            <th>Topic</th>
+            <th style="width:14%">Teaching Method</th>
+            <th style="width:8%">CO</th>
+            <th style="width:8%">Duration</th>
+            <th style="width:10%">Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>L22</td>
+            <td><span class="badge unit-4">8</span></td>
+            <td>Operator Overloading: concept, unary operators</td>
+            <td>Lecture + Demo</td>
+            <td><span class="badge badge-co">CO4</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U4" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L23</td>
+            <td><span class="badge unit-4">8</span></td>
+            <td>Operator Overloading: binary operators, rules and restrictions</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO4</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U4" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L24</td>
+            <td><span class="badge unit-4">8</span></td>
+            <td>Virtual Functions and Runtime Polymorphism</td>
+            <td>Lecture + Code Demo</td>
+            <td><span class="badge badge-co">CO4</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U4" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L25</td>
+            <td><span class="badge unit-4">9</span></td>
+            <td>Pure Virtual Functions and Abstract Classes</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO4</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U4" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L26</td>
+            <td><span class="badge unit-4">9</span></td>
+            <td>Type Conversion: basic to class, class to basic, class to class</td>
+            <td>Lecture + Demo</td>
+            <td><span class="badge badge-co">CO4</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U4" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L27</td>
+            <td><span class="badge unit-4">9</span></td>
+            <td>Unit 4 Revision &amp; Problem Solving</td>
+            <td>Problem Solving</td>
+            <td><span class="badge badge-co">CO4</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U4" aria-disabled="true">Plan</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── Unit 5 ────────────────────────────────────────────────────────── -->
+  <div class="section-block lesson-unit unit-5-block" id="unit5">
+    <h2>
+      <span class="badge unit-5 me-2">Unit 5</span>
+      Exception Handling and File I/O
+      <small class="text-muted fw-normal ms-2" style="font-size:0.82rem;">6 hrs &nbsp;·&nbsp; CO5 &nbsp;·&nbsp; Weeks 10–11</small>
+    </h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-sm align-middle">
+        <thead class="table-light">
+          <tr>
+            <th style="width:6%">Lecture</th>
+            <th style="width:8%">Week</th>
+            <th>Topic</th>
+            <th style="width:14%">Teaching Method</th>
+            <th style="width:8%">CO</th>
+            <th style="width:8%">Duration</th>
+            <th style="width:10%">Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>L28</td>
+            <td><span class="badge unit-5">10</span></td>
+            <td>Exception Handling: try, catch, throw; built-in exception types</td>
+            <td>Lecture + Demo</td>
+            <td><span class="badge badge-co">CO5</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U5" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L29</td>
+            <td><span class="badge unit-5">10</span></td>
+            <td>Multiple catch blocks, re-throwing exceptions, custom exceptions</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO5</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U5" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L30</td>
+            <td><span class="badge unit-5">10</span></td>
+            <td>File Streams: ifstream, ofstream, fstream; opening and closing files</td>
+            <td>Lecture + Code Demo</td>
+            <td><span class="badge badge-co">CO5</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U5" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L31</td>
+            <td><span class="badge unit-5">11</span></td>
+            <td>File I/O: read/write operations, file modes, binary files</td>
+            <td>Lecture + Demo</td>
+            <td><span class="badge badge-co">CO5</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U5" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L32</td>
+            <td><span class="badge unit-5">11</span></td>
+            <td>Random access in files: seekg, seekp, tellg, tellp</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO5</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U5" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L33</td>
+            <td><span class="badge unit-5">11</span></td>
+            <td>Unit 5 Revision &amp; Problem Solving</td>
+            <td>Problem Solving</td>
+            <td><span class="badge badge-co">CO5</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U5" aria-disabled="true">Plan</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── Unit 6 ────────────────────────────────────────────────────────── -->
+  <div class="section-block lesson-unit unit-6-block" id="unit6">
+    <h2>
+      <span class="badge unit-6 me-2">Unit 6</span>
+      Templates and Standard Template Library (STL)
+      <small class="text-muted fw-normal ms-2" style="font-size:0.82rem;">6 hrs &nbsp;·&nbsp; CO6 &nbsp;·&nbsp; Weeks 12–13</small>
+    </h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-sm align-middle">
+        <thead class="table-light">
+          <tr>
+            <th style="width:6%">Lecture</th>
+            <th style="width:8%">Week</th>
+            <th>Topic</th>
+            <th style="width:14%">Teaching Method</th>
+            <th style="width:8%">CO</th>
+            <th style="width:8%">Duration</th>
+            <th style="width:10%">Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>L34</td>
+            <td><span class="badge unit-6">12</span></td>
+            <td>Function Templates: syntax, instantiation, specialisation</td>
+            <td>Lecture + Demo</td>
+            <td><span class="badge badge-co">CO6</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U6" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L35</td>
+            <td><span class="badge unit-6">12</span></td>
+            <td>Class Templates: syntax, member functions, template parameters</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO6</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U6" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L36</td>
+            <td><span class="badge unit-6">12</span></td>
+            <td>STL Overview: containers, iterators, algorithms</td>
+            <td>Lecture + Demo</td>
+            <td><span class="badge badge-co">CO6</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U6" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L37</td>
+            <td><span class="badge unit-6">13</span></td>
+            <td>STL Sequence Containers: vector, list, deque</td>
+            <td>Lecture + Code Demo</td>
+            <td><span class="badge badge-co">CO6</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U6" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L38</td>
+            <td><span class="badge unit-6">13</span></td>
+            <td>STL Associative Containers: map, set; STL Algorithms: sort, find, count</td>
+            <td>Lecture + Examples</td>
+            <td><span class="badge badge-co">CO6</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U6" aria-disabled="true">Plan</a></td>
+          </tr>
+          <tr>
+            <td>L39</td>
+            <td><span class="badge unit-6">13</span></td>
+            <td>Course Revision, Previous Year Questions Discussion &amp; Exam Tips</td>
+            <td>Revision / Q&amp;A</td>
+            <td><span class="badge badge-co">CO6</span></td>
+            <td>1 hr</td>
+            <td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="LP_U6" aria-disabled="true">Plan</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>CEUE203 Object Oriented Programming</strong></p>
+    <p>Charotar University of Science and Technology (CHARUSAT) &middot; Faculty of Technology and Engineering</p>
+    <p class="text-muted">3rd Semester &nbsp;&middot;&nbsp; Academic Year 2026–27 &nbsp;&middot;&nbsp; Theory + Lab &nbsp;&middot;&nbsp; &copy; 2026 CHARUSAT</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+  function filterUnit(unit, btn) {
+    // Update active button
+    document.querySelectorAll('.filter-bar .btn').forEach(b => {
+      b.classList.remove('btn-primary', 'active');
+      b.classList.add('btn-outline-primary');
+    });
+    btn.classList.remove('btn-outline-primary');
+    btn.classList.add('btn-primary', 'active');
+
+    // Show/hide units
+    document.querySelectorAll('.lesson-unit').forEach(el => {
+      if (unit === 'all') {
+        el.style.display = '';
+      } else {
+        el.style.display = el.classList.contains(unit + '-block') ? '' : 'none';
+      }
+    });
+  }
+</script>
+</body>
+</html>

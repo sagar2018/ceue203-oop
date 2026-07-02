@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practicals · CEUE203</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Navbar ─────────────────────────────────────────────────────────────── -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">CEUE203</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="co-po-pso.html">CO&ndash;PO&ndash;PSO</a></li>
+        <li class="nav-item"><a class="nav-link" href="lesson-planning.html">Lesson Planning</a></li>
+        <li class="nav-item"><a class="nav-link active" href="practicals.html">Practicals</a></li>
+        <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Page Header ────────────────────────────────────────────────────────── -->
+<div class="page-header">
+  <div class="container">
+    <h1>Weekly Practicals</h1>
+    <p class="sub">Lab exercises for CEUE203 &ndash; Object Oriented Programming</p>
+    <div class="badges">
+      <span class="badge">CEUE203</span>
+      <span class="badge">3rd Semester · 2026–27</span>
+      <span class="badge">13 Practicals</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── Main content ───────────────────────────────────────────────────────── -->
+<main class="container">
+
+  <!-- Filter bar -->
+  <div class="section-block pb-2">
+    <div class="filter-bar">
+      <button class="btn btn-sm btn-primary active" onclick="filterPracticals('all', this)">All</button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-1', this)">
+        <span class="badge unit-1 me-1">1</span> Intro
+      </button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-2', this)">
+        <span class="badge unit-2 me-1">2</span> Classes
+      </button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-3', this)">
+        <span class="badge unit-3 me-1">3</span> Inheritance
+      </button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-4', this)">
+        <span class="badge unit-4 me-1">4</span> Polymorphism
+      </button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-5', this)">
+        <span class="badge unit-5 me-1">5</span> Exception / I/O
+      </button>
+      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-6', this)">
+        <span class="badge unit-6 me-1">6</span> Templates / STL
+      </button>
+    </div>
+  </div>
+
+  <!-- Practicals accordion -->
+  <div class="accordion" id="practicalsAccordion">
+
+    <!-- P1 -->
+    <div class="accordion-item practical-item unit-1" data-unit="unit-1">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p1">
+          <span class="badge unit-1">P1</span>
+          <span class="flex-grow-1">C++ Basics: I/O, variables, references, function overloading</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO1</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p1" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+              <p class="mb-2"><strong>Tasks:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-1">1</span></td></tr>
+                <tr><th>CO</th><td>CO1</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W1" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="accordion-item practical-item unit-1" data-unit="unit-1">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p2">
+          <span class="badge unit-1">P2</span>
+          <span class="flex-grow-1">C++ OOP Concepts: classes, objects, member functions</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO1</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p2" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+              <p class="mb-2"><strong>Tasks:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-1">1</span></td></tr>
+                <tr><th>CO</th><td>CO1</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W2" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="accordion-item practical-item unit-2" data-unit="unit-2">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p3">
+          <span class="badge unit-2">P3</span>
+          <span class="flex-grow-1">Constructors and Destructors</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO2</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p3" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-2">2</span></td></tr>
+                <tr><th>CO</th><td>CO2</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W3" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="accordion-item practical-item unit-2" data-unit="unit-2">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p4">
+          <span class="badge unit-2">P4</span>
+          <span class="flex-grow-1">Static Members and Friend Functions</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO2</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p4" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-2">2</span></td></tr>
+                <tr><th>CO</th><td>CO2</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W4" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="accordion-item practical-item unit-2" data-unit="unit-2">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p5">
+          <span class="badge unit-2">P5</span>
+          <span class="flex-grow-1">Copy Constructor and this Pointer</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO2</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p5" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-2">2</span></td></tr>
+                <tr><th>CO</th><td>CO2</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W5" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P6 -->
+    <div class="accordion-item practical-item unit-3" data-unit="unit-3">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p6">
+          <span class="badge unit-3">P6</span>
+          <span class="flex-grow-1">Single and Multilevel Inheritance</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO3</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p6" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-3">3</span></td></tr>
+                <tr><th>CO</th><td>CO3</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W6" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P7 -->
+    <div class="accordion-item practical-item unit-3" data-unit="unit-3">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p7">
+          <span class="badge unit-3">P7</span>
+          <span class="flex-grow-1">Multiple and Hybrid Inheritance with Virtual Base Class</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO3</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p7" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-3">3</span></td></tr>
+                <tr><th>CO</th><td>CO3</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W7" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P8 -->
+    <div class="accordion-item practical-item unit-4" data-unit="unit-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p8">
+          <span class="badge unit-4">P8</span>
+          <span class="flex-grow-1">Operator Overloading</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO4</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p8" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-4">4</span></td></tr>
+                <tr><th>CO</th><td>CO4</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W8" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P9 -->
+    <div class="accordion-item practical-item unit-4" data-unit="unit-4">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p9">
+          <span class="badge unit-4">P9</span>
+          <span class="flex-grow-1">Virtual Functions and Abstract Classes</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO4</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p9" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-4">4</span></td></tr>
+                <tr><th>CO</th><td>CO4</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W9" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P10 -->
+    <div class="accordion-item practical-item unit-5" data-unit="unit-5">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p10">
+          <span class="badge unit-5">P10</span>
+          <span class="flex-grow-1">Exception Handling</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO5</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p10" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-5">5</span></td></tr>
+                <tr><th>CO</th><td>CO5</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W10" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P11 -->
+    <div class="accordion-item practical-item unit-5" data-unit="unit-5">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p11">
+          <span class="badge unit-5">P11</span>
+          <span class="flex-grow-1">File I/O with Streams</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO5</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p11" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-5">5</span></td></tr>
+                <tr><th>CO</th><td>CO5</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W11" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P12 -->
+    <div class="accordion-item practical-item unit-6" data-unit="unit-6">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p12">
+          <span class="badge unit-6">P12</span>
+          <span class="flex-grow-1">Function and Class Templates</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO6</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p12" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-6">6</span></td></tr>
+                <tr><th>CO</th><td>CO6</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W12" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P13 -->
+    <div class="accordion-item practical-item unit-6" data-unit="unit-6">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="collapse" data-bs-target="#p13">
+          <span class="badge unit-6">P13</span>
+          <span class="flex-grow-1">STL Containers and Algorithms</span>
+          <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
+            <span class="badge badge-co">CO6</span>
+          </span>
+        </button>
+      </h2>
+      <div id="p13" class="accordion-collapse collapse" data-bs-parent="#practicalsAccordion">
+        <div class="accordion-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <p class="mb-2"><strong>Objective:</strong> To be added.</p>
+            </div>
+            <div class="col-md-4">
+              <table class="table table-sm table-bordered mb-0">
+                <tr><th>Unit</th><td><span class="badge unit-6">6</span></td></tr>
+                <tr><th>CO</th><td>CO6</td></tr>
+                <tr><th>Marks</th><td>—</td></tr>
+                <tr><th>Handout</th><td><a href="#" class="btn btn-sm btn-outline-primary drive-btn disabled" data-drive-key="P_W13" aria-disabled="true">Download</a></td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /accordion -->
+
+</main>
+
+<!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>CEUE203 Object Oriented Programming</strong></p>
+    <p>Charotar University of Science and Technology (CHARUSAT) &middot; Faculty of Technology and Engineering</p>
+    <p class="text-muted">3rd Semester &nbsp;&middot;&nbsp; Academic Year 2026–27 &nbsp;&middot;&nbsp; Theory + Lab &nbsp;&middot;&nbsp; &copy; 2026 CHARUSAT</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+  function filterPracticals(unit, btn) {
+    document.querySelectorAll('.filter-bar .btn').forEach(b => {
+      b.classList.remove('btn-primary', 'active');
+      b.classList.add('btn-outline-primary');
+    });
+    btn.classList.remove('btn-outline-primary');
+    btn.classList.add('btn-primary', 'active');
+
+    document.querySelectorAll('.practical-item').forEach(el => {
+      el.style.display = (unit === 'all' || el.dataset.unit === unit) ? '' : 'none';
+    });
+  }
+</script>
+</body>
+</html>
