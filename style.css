@@ -332,12 +332,14 @@ a:hover {
 }
 
 /* Unit-phase colours (OOP) */
-.unit-1  { background-color: #198754; color: #fff; }   /* green   Unit 1: Intro        */
-.unit-2  { background-color: #0d6efd; color: #fff; }   /* blue    Unit 2: Classes        */
-.unit-3  { background-color: #6f42c1; color: #fff; }   /* purple  Unit 3: Inheritance    */
-.unit-4  { background-color: #fd7e14; color: #fff; }   /* orange  Unit 4: Polymorphism   */
-.unit-5  { background-color: #856404; color: #fff; }   /* amber   Unit 5: Exception / IO */
-.unit-6  { background-color: #b02a37; color: #fff; }   /* red     Unit 6: Templates/STL  */
+.unit-1  { background-color: #198754; color: #fff; }   /* green   Unit 1: Java Fundamentals        */
+.unit-2  { background-color: #0d6efd; color: #fff; }   /* blue    Unit 2: Class Fundamentals       */
+.unit-3  { background-color: #6f42c1; color: #fff; }   /* purple  Unit 3: String Handling          */
+.unit-4  { background-color: #fd7e14; color: #fff; }   /* orange  Unit 4: Inheritance/Interfaces   */
+.unit-5  { background-color: #856404; color: #fff; }   /* amber   Unit 5: Exception Handling       */
+.unit-6  { background-color: #b02a37; color: #fff; }   /* red     Unit 6: Multithreading           */
+.unit-7  { background-color: #0d9488; color: #fff; }   /* teal    Unit 7: File NIO                 */
+.unit-8  { background-color: #6d4c41; color: #fff; }   /* brown   Unit 8: Collections / Generics   */
 
 /* ─── Buttons ────────────────────────────────────────────────────────────── */
 .btn {

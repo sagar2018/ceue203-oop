@@ -24,7 +24,7 @@
         <li class="nav-item"><a class="nav-link" href="co-po-pso.html">CO&ndash;PO&ndash;PSO</a></li>
         <li class="nav-item"><a class="nav-link" href="lesson-planning.html">Lesson Planning</a></li>
         <li class="nav-item"><a class="nav-link" href="practicals.html">Practicals</a></li>
-        <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li> -->
         <li class="nav-item"><a class="nav-link active" href="resources.html">Resources</a></li>
       </ul>
     </div>
@@ -46,6 +46,76 @@
 <!-- ── Main content ───────────────────────────────────────────────────────── -->
 <main class="container">
 
+  <!-- Materials Drive Link -->
+  <div class="section-block">
+    <h2>Course Materials</h2>
+    <p>All course materials (lecture notes, handouts, lab sheets, assignments) are available on the shared Google Drive folder:</p>
+    <a href="https://drive.google.com/drive/folders/1bxTDfsqrt0fJPvSvMXY8lIWRcAXSFB2i?usp=sharing"
+       target="_blank" rel="noopener"
+       class="btn btn-success btn-lg">
+      <i class="bi bi-folder2-open"></i>&nbsp; Open Materials Folder (Google Drive)
+    </a>
+  </div>
+
+  <!-- Textbooks -->
+  <!-- Self-Study / Pre-Course Materials -->
+  <div class="section-block">
+    <h2>Self-Study &amp; Further Study Materials</h2>
+    <p class="text-muted mb-3" style="font-size:0.88rem;">
+      These topics and links are prescribed in the syllabus as self-study / further-study components. Students should work through them alongside the lecture units.
+    </p>
+    <div class="table-responsive">
+      <table class="table table-bordered table-sm align-middle">
+        <thead class="table-light">
+          <tr>
+            <th style="width:8%">Unit</th>
+            <th style="width:28%">Self-Study Topic</th>
+            <th>Key Concepts</th>
+            <th style="width:15%">Resource Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="1"><span class="badge unit-1">SS1</span></td>
+            <td>Introduction &amp; Operators in Java</td>
+            <td>OOP principles overview; data types; variables; scope and lifetime; type casting; operators (arithmetic, bitwise, relational, boolean, assignment, ternary); control statements (if, switch, for, while, for-each, break, continue)</td>
+            <td><a href="https://www.geeksforgeeks.org/operators-in-java/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; GeeksforGeeks</a></td>
+          </tr>
+          <tr>
+            <td rowspan="3"><span class="badge unit-2">SS2</span></td>
+            <td>Basics of Arrays</td>
+            <td>Introduction to arrays; types; traversal with for / for-each; copying and cloning arrays; searching and sorting; jagged arrays; memory representation</td>
+            <td><a href="https://www.programiz.com/java-programming/arrays" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Programiz</a></td>
+          </tr>
+          <tr>
+            <td>Jagged Arrays</td>
+            <td>Creating and using jagged (ragged) arrays in Java</td>
+            <td><a href="https://www.geeksforgeeks.org/jagged-array-in-java/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; GeeksforGeeks</a></td>
+          </tr>
+          <tr>
+            <td>Array Memory Allocation</td>
+            <td>Where arrays are allocated in Java (stack vs. heap)</td>
+            <td><a href="https://www.geeksforgeeks.org/where-is-the-memory-allocated-for-arrays-in-java/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; GeeksforGeeks</a></td>
+          </tr>
+          <tr>
+            <td rowspan="2"><span class="badge unit-4">SS3</span></td>
+            <td>Fundamentals of Inheritance</td>
+            <td>Concept and need for inheritance; types (single, multilevel, hierarchical)</td>
+            <td><a href="https://www.scaler.com/topics/java/inheritance-in-java/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Scaler</a></td>
+          </tr>
+          <tr>
+            <td>Fundamentals of Polymorphism</td>
+            <td>Concept and need for polymorphism; method overloading; method overriding</td>
+            <td><a href="https://www.scaler.com/topics/java/polymorphism-in-java/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Scaler</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-muted mt-1" style="font-size:0.82rem;">
+      <i class="bi bi-info-circle"></i>&nbsp; SS1–SS3 are prescribed self-study units from the course syllabus. Doubts arising from self-study topics will be addressed and clarified during classroom sessions.
+    </p>
+  </div>
+
   <!-- Textbooks -->
   <div class="section-block">
     <h2>Textbooks</h2>
@@ -55,28 +125,59 @@
           <tr>
             <th style="width:5%">Sr</th>
             <th>Title</th>
-            <th style="width:25%">Author(s)</th>
-            <th style="width:15%">CO</th>
+            <th style="width:28%">Author(s)</th>
+            <th style="width:12%">CO</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td><strong>Object Oriented Programming with C++</strong></td>
-            <td>E. Balagurusamy</td>
-            <td>CO1–CO6</td>
+            <td><strong>Java: The Complete Reference, Thirteenth Edition</strong></td>
+            <td>Herbert Schildt &mdash; McGraw Hill</td>
+            <td>CO1&ndash;CO6</td>
           </tr>
           <tr>
             <td>2</td>
-            <td><strong>The C++ Programming Language</strong></td>
-            <td>Bjarne Stroustrup</td>
-            <td>CO1–CO6</td>
+            <td><strong>OCP Java SE 17 Developer Programmer&rsquo;s Guide (Exam 1Z0-829)</strong></td>
+            <td>Khalid A. Mughal, Vasily A. Strelnikov &mdash; Oracle Press</td>
+            <td>CO1&ndash;CO6</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Reference Books -->
+  <div class="section-block">
+    <h2>Reference Books</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-sm">
+        <thead>
+          <tr>
+            <th style="width:5%">Sr</th>
+            <th>Title</th>
+            <th style="width:28%">Author(s)</th>
+            <th style="width:12%">CO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><strong>Effective Java, 3rd Edition</strong></td>
+            <td>Joshua Bloch &mdash; Addison-Wesley</td>
+            <td>CO1&ndash;CO6</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><strong>Core Java Volume I &mdash; Fundamentals</strong></td>
+            <td>Cay S. Horstmann &mdash; Pearson</td>
+            <td>CO1&ndash;CO4</td>
           </tr>
           <tr>
             <td>3</td>
-            <td><strong>C++ How to Program</strong></td>
-            <td>Deitel &amp; Deitel</td>
-            <td>CO1–CO6</td>
+            <td><strong>Head First Java, 3rd Edition</strong></td>
+            <td>Kathy Sierra, Bert Bates, Trisha Gee &mdash; O&rsquo;Reilly</td>
+            <td>CO1&ndash;CO3</td>
           </tr>
         </tbody>
       </table>
@@ -100,28 +201,175 @@
         <tbody>
           <tr>
             <td>1</td>
-            <td>cppreference.com &ndash; C++ Standard Library Reference</td>
+            <td>Oracle Java Documentation</td>
             <td><span class="badge badge-docs">Docs</span></td>
-            <td>CO1–CO6</td>
-            <td><a href="https://en.cppreference.com" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Open</a></td>
+            <td>CO1&ndash;CO6</td>
+            <td><a href="https://docs.oracle.com/en/java/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Open</a></td>
           </tr>
           <tr>
             <td>2</td>
-            <td>learncpp.com &ndash; Free C++ tutorial</td>
+            <td>Baeldung &mdash; Java tutorials and guides</td>
             <td><span class="badge badge-docs">Tutorial</span></td>
-            <td>CO1–CO6</td>
-            <td><a href="https://www.learncpp.com" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Open</a></td>
+            <td>CO1&ndash;CO6</td>
+            <td><a href="https://www.baeldung.com/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Open</a></td>
           </tr>
           <tr>
             <td>3</td>
-            <td>NPTEL &ndash; Programming in C++ (IIT Kharagpur)</td>
-            <td><span class="badge badge-youtube">Video</span></td>
-            <td>CO1–CO4</td>
-            <td><a href="https://nptel.ac.in" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Open</a></td>
+            <td>dev.java &mdash; Official Java developer portal</td>
+            <td><span class="badge badge-docs">Docs</span></td>
+            <td>CO1&ndash;CO6</td>
+            <td><a href="https://dev.java/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Open</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>GeeksforGeeks &mdash; Java operators, inheritance, collections</td>
+            <td><span class="badge badge-docs">Tutorial</span></td>
+            <td>CO1&ndash;CO6</td>
+            <td><a href="https://www.geeksforgeeks.org/java/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Open</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Scaler &mdash; Java inheritance and polymorphism guides</td>
+            <td><span class="badge badge-docs">Tutorial</span></td>
+            <td>CO2</td>
+            <td><a href="https://www.scaler.com/topics/java/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Open</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Programiz &mdash; Java arrays and collections</td>
+            <td><span class="badge badge-docs">Tutorial</span></td>
+            <td>CO1, CO6</td>
+            <td><a href="https://www.programiz.com/java-programming/" target="_blank" rel="noopener" class="resource-link"><i class="bi bi-box-arrow-up-right"></i>&nbsp; Open</a></td>
           </tr>
         </tbody>
       </table>
     </div>
+  </div>
+
+  <!-- Coursera Specialization -->
+  <div class="section-block">
+    <h2><i class="bi bi-mortarboard-fill text-primary me-2"></i>Coursera &mdash; Core Java Specialization</h2>
+    <p class="mb-3">
+      A 4-course series by <strong>LearnQuest</strong> covering the Java programming language and its core libraries.
+      Intermediate level &nbsp;&middot;&nbsp; ~61 hrs total &nbsp;&middot;&nbsp; Flexible schedule &nbsp;&middot;&nbsp; Shareable certificate.
+    </p>
+    <a href="https://www.coursera.org/programs/cspit-it-zjgj2/specializations/core-java?source=search"
+       target="_blank" rel="noopener"
+       class="btn btn-primary mb-4">
+      <i class="bi bi-box-arrow-up-right"></i>&nbsp; Open Specialization on Coursera
+    </a>
+
+    <div class="row g-3">
+
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-start gap-3">
+              <span class="badge unit-1 fs-6 px-3 py-2">1</span>
+              <div>
+                <h5 class="card-title mb-1">Introduction to Java</h5>
+                <p class="card-text text-muted small mb-2">
+                  Basic Java fundamentals: syntax, data types, control flow, program structure, Eclipse setup.
+                </p>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <span class="badge bg-light text-dark border"><i class="bi bi-clock"></i> 11 hrs</span>
+                  <span class="badge badge-co">CO1</span>
+                  <a href="https://www.coursera.org/learn/java-introduction?specialization=core-java"
+                     target="_blank" rel="noopener"
+                     class="btn btn-sm btn-outline-primary ms-auto">
+                    <i class="bi bi-box-arrow-up-right"></i>&nbsp; Open
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-start gap-3">
+              <span class="badge unit-2 fs-6 px-3 py-2">2</span>
+              <div>
+                <h5 class="card-title mb-1">Introduction to Object-Oriented Programming with Java</h5>
+                <p class="card-text text-muted small mb-2">
+                  OOP refresher: Java classes, instances, encapsulation, packaging, and constructors.
+                </p>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <span class="badge bg-light text-dark border"><i class="bi bi-clock"></i> 14 hrs</span>
+                  <span class="badge badge-co">CO1</span>
+                  <span class="badge badge-co">CO2</span>
+                  <a href="https://www.coursera.org/learn/object-oriented-programming-with-java?specialization=core-java"
+                     target="_blank" rel="noopener"
+                     class="btn btn-sm btn-outline-primary ms-auto">
+                    <i class="bi bi-box-arrow-up-right"></i>&nbsp; Open
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-start gap-3">
+              <span class="badge unit-4 fs-6 px-3 py-2">3</span>
+              <div>
+                <h5 class="card-title mb-1">Object-Oriented Hierarchies in Java</h5>
+                <p class="card-text text-muted small mb-2">
+                  Deep dive into inheritance, polymorphism, abstract classes, and interfaces in Java.
+                </p>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <span class="badge bg-light text-dark border"><i class="bi bi-clock"></i> 14 hrs</span>
+                  <span class="badge badge-co">CO2</span>
+                  <a href="https://www.coursera.org/learn/object-oriented-hierarchies-java?specialization=core-java"
+                     target="_blank" rel="noopener"
+                     class="btn btn-sm btn-outline-primary ms-auto">
+                    <i class="bi bi-box-arrow-up-right"></i>&nbsp; Open
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-start gap-3">
+              <span class="badge unit-8 fs-6 px-3 py-2">4</span>
+              <div>
+                <h5 class="card-title mb-1">Java Class Library</h5>
+                <p class="card-text text-muted small mb-2">
+                  Java SE class library: Generics, Collections, Streams, File I/O, Exceptions, Annotations, and Enums.
+                </p>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <span class="badge bg-light text-dark border"><i class="bi bi-clock"></i> 22 hrs</span>
+                  <span class="badge badge-co">CO3</span>
+                  <span class="badge badge-co">CO5</span>
+                  <span class="badge badge-co">CO6</span>
+                  <a href="https://www.coursera.org/learn/java-class-library?specialization=core-java"
+                     target="_blank" rel="noopener"
+                     class="btn btn-sm btn-outline-primary ms-auto">
+                    <i class="bi bi-box-arrow-up-right"></i>&nbsp; Open
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+    <p class="text-muted mt-3" style="font-size:0.83rem;">
+      <i class="bi bi-info-circle"></i>&nbsp;
+      Offered by LearnQuest on Coursera &nbsp;&middot;&nbsp; 4.6 &#9733; (2,841 reviews) &nbsp;&middot;&nbsp; 60,000+ enrolled.
+      Access via your institution's Coursera program link above.
+    </p>
   </div>
 
   <!-- CO-wise Reference -->
@@ -139,33 +387,33 @@
         <tbody>
           <tr>
             <td><span class="badge badge-co">CO1</span></td>
-            <td>Introduction to OOP</td>
-            <td><small>To be added</small></td>
+            <td>Java Fundamentals, Class Mechanics, String Handling</td>
+            <td><small>Schildt Ch. 1&ndash;10; docs.oracle.com; GeeksforGeeks operators; Programiz arrays</small></td>
           </tr>
           <tr>
             <td><span class="badge badge-co">CO2</span></td>
-            <td>Classes &amp; Objects</td>
-            <td><small>To be added</small></td>
+            <td>Inheritance, Interfaces &amp; Packages</td>
+            <td><small>Schildt Ch. 11&ndash;14; Scaler inheritance/polymorphism; Baeldung interfaces</small></td>
           </tr>
           <tr>
             <td><span class="badge badge-co">CO3</span></td>
-            <td>Inheritance</td>
-            <td><small>To be added</small></td>
+            <td>Exception Handling</td>
+            <td><small>Schildt Ch. 10; Baeldung exception-handling; Oracle tutorial try-with-resources</small></td>
           </tr>
           <tr>
             <td><span class="badge badge-co">CO4</span></td>
-            <td>Polymorphism</td>
-            <td><small>To be added</small></td>
+            <td>Multithreaded Programming</td>
+            <td><small>Schildt Ch. 11; Baeldung concurrency; Oracle thread tutorial; dev.java executor</small></td>
           </tr>
           <tr>
             <td><span class="badge badge-co">CO5</span></td>
-            <td>Exception Handling &amp; File I/O</td>
-            <td><small>To be added</small></td>
+            <td>File NIO &amp; Serialization</td>
+            <td><small>Schildt Ch. 19&ndash;20; Oracle NIO.2 guide; Baeldung java-nio2-file-api</small></td>
           </tr>
           <tr>
             <td><span class="badge badge-co">CO6</span></td>
-            <td>Templates &amp; STL</td>
-            <td><small>To be added</small></td>
+            <td>Collection Framework &amp; Generics</td>
+            <td><small>Schildt Ch. 17&ndash;18; GeeksforGeeks collections; Baeldung collections; Programiz ArrayList</small></td>
           </tr>
         </tbody>
       </table>
@@ -179,7 +427,7 @@
   <div class="container">
     <p><strong>CEUE203 Object Oriented Programming</strong></p>
     <p>Charotar University of Science and Technology (CHARUSAT) &middot; Faculty of Technology and Engineering</p>
-    <p class="text-muted">3rd Semester &nbsp;&middot;&nbsp; Academic Year 2026–27 &nbsp;&middot;&nbsp; Theory + Lab &nbsp;&middot;&nbsp; &copy; 2026 CHARUSAT</p>
+    <p class="text-muted">3rd Semester &nbsp;&middot;&nbsp; Academic Year 2026&ndash;27 &nbsp;&middot;&nbsp; Theory 2 + Lab 2 hrs/week &nbsp;&middot;&nbsp; &copy; 2026 CHARUSAT</p>
   </div>
 </footer>
 

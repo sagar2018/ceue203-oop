@@ -13,16 +13,19 @@
 const DRIVE_LINKS = {
 
   // ── Course-level documents ──────────────────────────────────────────────
-  SYLLABUS:    '#',   // TODO: Full course syllabus (PDF)
-  LAB_MANUAL:  '#',   // TODO: Lab manual / general instructions (PDF)
+  SYLLABUS:    'https://drive.google.com/file/d/1NB5lxTBxz-z9H5tLj17ya0xfh8BSYt0Q/view?usp=sharing',   // TODO: Full course syllabus (PDF)
+  LAB_MANUAL:  'https://drive.google.com/file/d/1BCnZWASywHKLBk9bbLWq1i1XVMe7ClDI/view?usp=share_link',   // TODO: Lab manual / general instructions (PDF)
+  MATERIALS:   'https://drive.google.com/drive/folders/1bxTDfsqrt0fJPvSvMXY8lIWRcAXSFB2i?usp=sharing',
 
-  // ── Lesson Plan handouts (per unit / week) ──────────────────────────────
-  LP_U1:  '#',   // Unit 1 Lesson Plan
-  LP_U2:  '#',   // Unit 2 Lesson Plan
-  LP_U3:  '#',   // Unit 3 Lesson Plan
-  LP_U4:  '#',   // Unit 4 Lesson Plan
-  LP_U5:  '#',   // Unit 5 Lesson Plan
-  LP_U6:  '#',   // Unit 6 Lesson Plan
+  // ── Lesson Plan handouts (per unit) ─────────────────────────────────────
+  LP_U1:  '#',   // Unit 1 Lesson Plan — Java Fundamentals
+  LP_U2:  '#',   // Unit 2 Lesson Plan — Class Fundamentals
+  LP_U3:  '#',   // Unit 3 Lesson Plan — String Handling
+  LP_U4:  '#',   // Unit 4 Lesson Plan — Inheritance, Interfaces & Packages
+  LP_U5:  '#',   // Unit 5 Lesson Plan — Exception Handling
+  LP_U6:  '#',   // Unit 6 Lesson Plan — Multithreaded Programming
+  LP_U7:  '#',   // Unit 7 Lesson Plan — File NIO
+  LP_U8:  '#',   // Unit 8 Lesson Plan — Collection Framework & Generics
 
   // ── Practical handouts ──────────────────────────────────────────────────
   P_W1:   '#',   // Practical  1
@@ -38,6 +41,7 @@ const DRIVE_LINKS = {
   P_W11:  '#',   // Practical 11
   P_W12:  '#',   // Practical 12
   P_W13:  '#',   // Practical 13
+  P_W14:  '#',   // Practical 14
 
   // ── Assignment documents ─────────────────────────────────────────────────
   A_1:    '#',   // Assignment 1
@@ -82,15 +86,17 @@ function applyViewMode() {
 
 // =============================================================================
 //  Unit badge helper
-//  Unit 1: Intro to OOP             (green)
-//  Unit 2: Classes & Objects        (blue)
-//  Unit 3: Inheritance              (purple)
-//  Unit 4: Polymorphism             (orange)
-//  Unit 5: Exception Handling & I/O (amber)
-//  Unit 6: Templates & STL          (red)
+//  Unit 1: Java Fundamentals               (green)
+//  Unit 2: Class Fundamentals              (blue)
+//  Unit 3: String Handling                 (purple)
+//  Unit 4: Inheritance, Interfaces &amp; Packages (orange)
+//  Unit 5: Exception Handling              (amber)
+//  Unit 6: Multithreaded Programming       (red)
+//  Unit 7: File NIO                        (teal)
+//  Unit 8: Collection Framework & Generics (brown)
 // =============================================================================
 function unitBadgeClass(n) {
-  const map = { 1:'unit-1', 2:'unit-2', 3:'unit-3', 4:'unit-4', 5:'unit-5', 6:'unit-6' };
+  const map = { 1:'unit-1', 2:'unit-2', 3:'unit-3', 4:'unit-4', 5:'unit-5', 6:'unit-6', 7:'unit-7', 8:'unit-8' };
   return map[parseInt(n)] || 'unit-1';
 }
 

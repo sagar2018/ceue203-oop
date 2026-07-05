@@ -1,83 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practicals · CEUE203</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- ── Navbar ─────────────────────────────────────────────────────────────── -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">CEUE203</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
-        <li class="nav-item"><a class="nav-link" href="co-po-pso.html">CO&ndash;PO&ndash;PSO</a></li>
-        <li class="nav-item"><a class="nav-link" href="lesson-planning.html">Lesson Planning</a></li>
-        <li class="nav-item"><a class="nav-link active" href="practicals.html">Practicals</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li> -->
-        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- ── Page Header ────────────────────────────────────────────────────────── -->
-<div class="page-header">
-  <div class="container">
-    <h1>Weekly Practicals</h1>
-    <p class="sub">Lab exercises for CEUE203 &ndash; Object Oriented Programming</p>
-    <div class="badges">
-      <span class="badge">CEUE203</span>
-      <span class="badge">3rd Semester · 2026–27</span>
-      <span class="badge">14 Practicals</span>
-    </div>
-  </div>
-</div>
-
-<!-- ── Main content ───────────────────────────────────────────────────────── -->
-<main class="container">
-
-  <!-- Filter bar -->
-  <div class="section-block pb-2">
-    <div class="filter-bar">
-      <button class="btn btn-sm btn-primary active" onclick="filterPracticals('all', this)">All</button>
-      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-1', this)">
-        <span class="badge unit-1 me-1">1</span> Java Fundamentals
-      </button>
-      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-2', this)">
-        <span class="badge unit-2 me-1">2</span> Class Fundamentals
-      </button>
-      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-3', this)">
-        <span class="badge unit-3 me-1">3</span> String Handling
-      </button>
-      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-4', this)">
-        <span class="badge unit-4 me-1">4</span> Inheritance / Interfaces
-      </button>
-      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-5', this)">
-        <span class="badge unit-5 me-1">5</span> Exception Handling
-      </button>
-      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-6', this)">
-        <span class="badge unit-6 me-1">6</span> Multithreading
-      </button>
-      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-7', this)">
-        <span class="badge unit-7 me-1">7</span> File NIO
-      </button>
-      <button class="btn btn-sm btn-outline-primary" onclick="filterPracticals('unit-8', this)">
-        <span class="badge unit-8 me-1">8</span> Collections / Generics
-      </button>
-    </div>
-  </div>
-
   <!-- Practicals accordion -->
   <div class="accordion" id="practicalsAccordion">
 
@@ -85,7 +5,7 @@
     <div class="accordion-item practical-item unit-1" data-unit="unit-1">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p1">
           <span class="badge unit-1">P1</span>
           <span class="flex-grow-1">Java Fundamentals &amp; MiniBank Shell</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -118,7 +38,7 @@
     <div class="accordion-item practical-item unit-2" data-unit="unit-2">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p2">
           <span class="badge unit-2">P2</span>
           <span class="flex-grow-1">Classes and Objects &mdash; Account &amp; Customer</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -151,7 +71,7 @@
     <div class="accordion-item practical-item unit-2" data-unit="unit-2">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p3">
           <span class="badge unit-2">P3</span>
           <span class="flex-grow-1">Object Class Methods, Nested Classes &amp; Cloneable</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -184,7 +104,7 @@
     <div class="accordion-item practical-item unit-3" data-unit="unit-3">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p4">
           <span class="badge unit-3">P4</span>
           <span class="flex-grow-1">String Handling, StringBuilder &amp; Regular Expressions</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -217,7 +137,7 @@
     <div class="accordion-item practical-item unit-4" data-unit="unit-4">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p5">
           <span class="badge unit-4">P5</span>
           <span class="flex-grow-1">Inheritance &amp; Polymorphism &mdash; Abstract Account Hierarchy</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -250,7 +170,7 @@
     <div class="accordion-item practical-item unit-4" data-unit="unit-4">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p6">
           <span class="badge unit-4">P6</span>
           <span class="flex-grow-1">Interfaces, Functional Interfaces, Packages &amp; JAR</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -283,7 +203,7 @@
     <div class="accordion-item practical-item unit-2" data-unit="unit-2">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p7">
           <span class="badge unit-2">P7</span>
           <span class="flex-grow-1">Custom Annotations &amp; Reflection</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -317,7 +237,7 @@
     <div class="accordion-item practical-item unit-5" data-unit="unit-5">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p8">
           <span class="badge unit-5">P8</span>
           <span class="flex-grow-1">Exception Handling &mdash; Custom Exception Hierarchy</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -350,7 +270,7 @@
     <div class="accordion-item practical-item unit-6" data-unit="unit-6">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p9">
           <span class="badge unit-6">P9</span>
           <span class="flex-grow-1">Thread Synchronization &amp; Race Conditions</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -383,7 +303,7 @@
     <div class="accordion-item practical-item unit-6" data-unit="unit-6">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p10">
           <span class="badge unit-6">P10</span>
           <span class="flex-grow-1">Thread Pools, Producer-Consumer &amp; Deadlock</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -416,7 +336,7 @@
     <div class="accordion-item practical-item unit-7" data-unit="unit-7">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p11">
           <span class="badge unit-7">P11</span>
           <span class="flex-grow-1">File I/O, Serialization &amp; NIO Report</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -449,7 +369,7 @@
     <div class="accordion-item practical-item unit-8" data-unit="unit-8">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p12">
           <span class="badge unit-8">P12</span>
           <span class="flex-grow-1">Collections Framework &mdash; AccountStore</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -482,7 +402,7 @@
     <div class="accordion-item practical-item unit-8" data-unit="unit-8">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p13">
           <span class="badge unit-8">P13</span>
           <span class="flex-grow-1">Generics &mdash; Generic Repository&lt;T&gt;</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -515,7 +435,7 @@
     <div class="accordion-item practical-item unit-1 unit-2 unit-3 unit-4 unit-5 unit-6 unit-7 unit-8" data-unit="all">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
-                data-bs-toggle="collapse" data-bs-target="">
+                data-bs-toggle="collapse" data-bs-target="#p14">
           <span class="badge bg-dark">P14</span>
           <span class="flex-grow-1">Capstone &mdash; MiniBank Assembly, JUnit Testing &amp; Runnable JAR</span>
           <span class="ms-auto d-flex gap-1 flex-shrink-0 co-badges">
@@ -550,39 +470,3 @@
     </div>
 
   </div><!-- /accordion -->
-
-</main>
-
-<!-- ── Footer ─────────────────────────────────────────────────────────────── -->
-<footer class="site-footer">
-  <div class="container">
-    <p><strong>CEUE203 Object Oriented Programming</strong></p>
-    <p>Charotar University of Science and Technology (CHARUSAT) &middot; Faculty of Technology and Engineering</p>
-    <p class="text-muted">3rd Semester &nbsp;&middot;&nbsp; Academic Year 2026&ndash;27 &nbsp;&middot;&nbsp; Theory 2 + Lab 2 hrs/week &nbsp;&middot;&nbsp; &copy; 2026 CHARUSAT</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="main.js"></script>
-<script>
-  function filterPracticals(unit, btn) {
-    document.querySelectorAll('.filter-bar .btn').forEach(b => {
-      b.classList.remove('btn-primary', 'active');
-      b.classList.add('btn-outline-primary');
-    });
-    btn.classList.remove('btn-outline-primary');
-    btn.classList.add('btn-primary', 'active');
-
-    document.querySelectorAll('.practical-item').forEach(el => {
-      if (unit === 'all') {
-        el.style.display = '';
-      } else if (el.dataset.unit === 'all') {
-        el.style.display = '';
-      } else {
-        el.style.display = el.classList.contains(unit) ? '' : 'none';
-      }
-    });
-  }
-</script>
-</body>
-</html>
