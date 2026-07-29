@@ -14,7 +14,7 @@ const DRIVE_LINKS = {
 
   // ── Course-level documents ──────────────────────────────────────────────
   SYLLABUS:    'https://drive.google.com/file/d/1NB5lxTBxz-z9H5tLj17ya0xfh8BSYt0Q/view?usp=sharing',   // TODO: Full course syllabus (PDF)
-  LAB_MANUAL:  'https://drive.google.com/file/d/1BCnZWASywHKLBk9bbLWq1i1XVMe7ClDI/view?usp=share_link',   // TODO: Lab manual / general instructions (PDF)
+  LAB_MANUAL:  'https://drive.google.com/file/d/1BDgEm9Ou2mzA2lLsjhTu9SP_fsuPI8V0/view?usp=share_link',   // TODO: Lab manual / general instructions (PDF)
   MATERIALS:   'https://drive.google.com/drive/folders/1bxTDfsqrt0fJPvSvMXY8lIWRcAXSFB2i?usp=sharing',
 
   // ── Lesson Plan handouts (per unit) ─────────────────────────────────────
